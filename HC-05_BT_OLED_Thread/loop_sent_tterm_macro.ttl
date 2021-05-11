@@ -1,0 +1,21 @@
+
+
+; Date    : 11-05-2021
+; Location: Ankara/Turkey
+; Author  : memonet
+; Periodic data over Bluetooth COM Port
+; File: loop_sent_tterm_macro.ttl
+
+
+val = 0
+
+while 1
+  sendln 'GROUP_CALL'
+  pause 3
+  sendln 'REGISTER'
+  pause 3
+  sendln 'GPS_QUERY'
+  pause 3
+endwhile
+
+exit
